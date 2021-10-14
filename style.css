@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.modal{
+    background-color: #ccc;
+    box-shadow: 0px 30px 70px rgba(0, 0, 0, 0.3);
+    width: 500px;
+    height: 300px;
+    position: fixed;
+    opacity: 0;
+    transition: 0.5s;
+    padding: 50px;
+    visibility: hidden;
+    top: 20%;
+    left: 30%;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.boxes{
+    width: 100px;
+    height: 150px;
+    border: 2px solid black;
+    transition: 0.5s;
+    box-shadow: 20px 20px 25px rgba(0, 0, 0, 0.3);
+}
+.box2{
+    position: relative;
+}
+.boxes:hover{
+    width: 120px;
+    height: 170px;
+}
+.box1{
+    display: flex;
+    justify-content: space-around;
+}
+button{
+    background-color: blue;
+}
+.modal:target {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+span{
+    color: blue;
+}
+.close{
+    
+    color: white;
+    text-decoration: none;
+    padding: 1px;
+    border-radius: 15px;
+    height: 10px;
+    line-height: 0.825;
+}
+#close-div{
+    background-color: rgba(219, 45, 45, 0.9);
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    display: flex;
+    align-content: flex-start;
+    justify-content: center;
+    right: 5px;
+    top: 5px;
+    border-radius: 17px;
+    padding: 1px;
+
+}
