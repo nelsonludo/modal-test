@@ -4,15 +4,16 @@ body{
     box-sizing: border-box;
     font-family: Gotham Rounded, sans-serif;
 }
+
 .modal{
-    background-color: #ccc;
+    background-color: #f5ddd1;
     box-shadow: 0px 30px 70px rgba(0, 0, 0, 0.3);
     width: 500px;
     height: 300px;
     position: fixed;
     opacity: 0;
     transition: 0.5s;
-    padding: 10px 50px 50px 50px;
+    padding: 25px 95px 140px 95px;
     visibility: hidden;
     top: 20%;
     left: 30%;
@@ -21,15 +22,17 @@ body{
     text-align: center;
     margin-bottom: 0;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 24px;
+    font-weight: 900;
 }
 
 .head{
     text-align: center;
+    margin-bottom: 80px;
 }
 
 #topic-txt{
-    font-size: 13px;
+    font-size: 14px;
     color: rgb(95, 95, 95);
 }
 .box{
@@ -39,23 +42,38 @@ body{
     min-height: 100vh;
 }
 .boxes{
-    width: 100px;
-    height: 150px;
-    border: 2px solid black;
+    width: 160px;
+    height: 209px;
     transition: 0.5s;
-    box-shadow: 20px 20px 25px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 11px 7px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #c49078;
+    position: relative;
+    color: rgba(255, 255, 255, 0.924);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    margin-right: 15px;
+    text-align: center;
+
+}
+.box1 a{
+    text-decoration: none;
+
 }
 
+
 .me{
-    border: 2px solid rgb(165, 66, 66);
+    background:linear-gradient(#111111, #5c5c5c) ;
     transition: 0.5s;
 }
 .box2{
     position: relative;
 }
 .boxes:hover{
-    width: 120px;
-    height: 170px;
+    width: 200px;
+    height: 230px;
 }
 .box1{
     display: flex;
@@ -70,7 +88,7 @@ button{
   visibility: visible;
 }
 span{
-    color: blue;
+    color: white;
 }
 .close{
     
@@ -100,14 +118,18 @@ span{
     background-color: rgba(180, 36, 36, 0.779);
 }
 
-.mySlides1{
+.modal-mini{
     display: none;
 }
 /* Next & previous buttons */
 
 .topics{
     text-align: center;
-    margin: 20px;}
+    margin: 20px;
+    position: absolute;
+    top: 105px;
+    left: 26%;
+}
 .prev, .next {
     cursor: pointer;
     padding:5px 20px;
@@ -116,6 +138,7 @@ span{
     font-size: 18px;
     transition: 0.6s ease;
     text-decoration :none;
+    text-transform: uppercase;
 }
   
 /* Position the "next button" to the right */
@@ -123,4 +146,292 @@ span{
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
     color: rgba(8, 8, 8, 0.655);
+}
+
+
+#economiser{
+    font-size: 10px;
+    position: absolute;
+    top: 10px;
+    left: 15px; 
+    transition: 0.5s;
+}
+#term{
+    font-size: 13px;
+    height: 6px;
+    color:#ffffffab;
+    margin-top: 15px; 
+    transition: 0.5s;
+}
+#fois{
+    font-size: 35px;height: 32px; font-weight: 900; margin-bottom: 0; 
+    transition: 0.5s;
+}
+#par-an{
+    font-size: 20px;height: 32px; font-weight: 900; 
+    transition: 0.5s;
+}
+#red-price{
+    background-color: #e41d15; width: 70%; padding: 2px 10px; font-weight: 900;border-radius: 15px; text-align: center; 
+    transition: 0.5s;
+}
+#line{
+    background-color: rgba(255, 255, 255, 0.924); width: 50px; margin: 7px 0 10px 0; height: 1.5px; 
+    transition: 0.5s;
+}
+#format{
+    font-size: 13.5px; font-weight: 500; 
+    transition: 0.5s;
+}
+#del-price{
+    font-size: 16px; font-weight: 1000; 
+    transition: 0.5s;
+}
+.boxes:hover #economiser{
+    font-size: 11px;
+}
+
+.boxes:hover #term{
+    font-size: 14px;
+}
+.boxes:hover #red-price{
+    font-size: 17px;
+}
+.boxes:hover #fois{
+    font-size: 36px;
+}
+.boxes:hover #par-an{
+    font-size: 21px;
+}
+.boxes:hover #format{
+    font-size: 14.5px;
+}
+.boxes:hover #del-price{
+    font-size: 17px;
+}
+
+@media screen and (max-width:1281px) {
+    .modal {
+        left: 25%;
+    }
+}
+
+@media screen and (max-width:1025px) {
+    .modal {
+        left: 15%;
+        top: 10%;
+    }
+}
+
+@media screen and (max-width:769px) {
+    .modal {
+        left: 5%;
+        top: 20%;
+    }
+}
+
+@media screen and (max-width:541px) {
+    .modal {
+        width: 285px;
+        height: 197px;
+        top: 20%;
+        left: 5%;
+        padding: 25px 100px 140px 105px;
+    }
+    .modal h2 {
+        font-size: 13px;
+    }
+    #topic-txt {
+        font-size: 8px;
+    }
+    .prev, .next {
+        font-size: 11px;
+    }
+    .topics {
+        margin: 0px;
+        top: 80px;
+        left: 25%;
+    }
+    .boxes {
+        width: 120px;
+        height: 145px;
+        padding-top: 20px;
+    }
+    .boxes:hover {
+        width: 145px;
+        height: 177px;
+    }
+    .boxes:hover #red-price {
+        font-size: 14px;
+    }
+    .boxes:hover #format {
+        font-size: 9.5px;
+    }
+    .boxes:hover #del-price {
+        font-size: 14px;
+    }
+    .boxes:hover #economiser {
+        font-size: 9px;
+    }
+    .boxes:hover #term {
+        font-size: 11px;
+    }
+    .boxes:hover #fois {
+        font-size: 27px;
+    }
+    .boxes:hover #par-an {
+        font-size: 19px;
+    }
+    #economiser {
+        font-size: 7px;
+    }
+    #term {
+        font-size: 9px;
+        height: 2px;
+    }
+    #fois {
+        font-size: 25px;
+        height: 22px;
+    }
+    #par-an {
+        font-size: 17px;
+        height: 24px;
+    }
+    #red-price {
+        font-size: 12px;
+    }
+    #format {
+        font-size: 8.5px;
+    }
+    #del-price {
+        font-size: 12px;
+    }
+    .head {
+        margin-bottom: 60px;
+    }
+}
+@media screen and (max-width:415px) {
+    .modal {
+        width: 170px;
+        height: 105px;
+        top: 20%;
+        left: 5%;
+    }
+    .modal h2 {
+        font-size: 8px;
+    }
+    #topic-txt {
+        font-size: 5px;
+    }
+    .prev, .next {
+        font-size: 8px;
+        padding: 5px 4px;
+    }
+    .boxes {
+        width: 98px;
+        height: 111px;
+        padding-top: 20px;
+    }
+    .boxes:hover {
+        width: 120px;
+        height: 128px;
+    }
+    .boxes:hover #red-price {
+        font-size: 11px;
+    }
+    .boxes:hover #format {
+        font-size: 7.5px;
+    }
+    .boxes:hover #del-price {
+        font-size: 11px;
+    }
+    .boxes:hover #economiser {
+        font-size: 6px;
+    }
+    .boxes:hover #term {
+        font-size: 8px;
+    }
+    .boxes:hover #fois {
+        font-size: 21px;
+    }
+    .boxes:hover #par-an {
+        font-size: 16px;
+    }
+    #economiser {
+        font-size: 5px;
+    }
+    #term {
+        font-size: 7px;
+        height: 0px;
+    }
+    #fois {
+        font-size: 20px;
+        height: 16px;
+    }
+    #par-an {
+        font-size: 15px;
+        height: 21px;
+    }
+    #red-price {
+        font-size: 9px;
+    }
+    #format {
+        font-size: 6.5px;
+    }
+    #del-price {
+        font-size: 9px;
+    }
+    #line {
+        background-color: rgba(255, 255, 255, 0.924);
+        width: 50px;
+        margin: 4px 0 3px 0;
+    }
+    .topics {
+        top: 75px;
+        left: 35%;
+    }
+    .head {
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 376px){
+    .modal {
+        left: 0%;
+    }
+    .head {
+        margin-bottom: 40px;
+        width: 237px;
+        margin-left: -40px;
+    }
+    .modal h2 {
+        font-size: 11px;
+    }
+    #topic-txt {
+        font-size: 6px;
+    }
+}
+@media screen and (max-width: 361px){
+    .modal {
+        width: 155px;
+    }
+}
+
+@media screen and (max-width: 321px){
+    .modal {
+        width: 115px;
+    }
+    .boxes {
+        width: 92px;
+        height: 109px;
+        padding-top: 20px;
+    }
+    .head {
+        margin-left: -63px;
+    }
+}
+@media screen and (max-width: 281px){
+    .modal {
+        padding: 25px 75px 140px 91px;
+    }
 }
